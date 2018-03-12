@@ -1,0 +1,9 @@
+@echo OFF
+echo Activating Tableau Desktop...
+cd /d C:\Program Files\Tableau\Tableau 10.2\bin
+start/wait tableau.exe -activate  TDTZ-F1F2-0560-67CD-A9B3
+if %errorlevel% EQU 536871018 (ECHO TABLEAU_ERROR_LICENSING_INVALID_KEY)
+if %errorlevel% EQU 536871012 (ECHO TABLEAU_ERROR_LICENCING_GENERAL)
+if %errorlevel% EQU 0 (ECHO SUCCESS)
+echo Registering Tableau Desktop...
+REGEDIT.EXE  /S  "C:\temp\TableauRegistration.reg"
