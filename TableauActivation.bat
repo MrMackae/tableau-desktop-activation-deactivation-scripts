@@ -4,7 +4,7 @@
 
 set TABVERSION=10.5
 set TABINSTALLPATH=C:\Program Files\Tableau\Tableau %TABVERSION%\bin
-set TABPRODUCTKEY=TDTZ-F1F2-0560-67CD-A9B3
+set TABPRODUCTKEY=XXXX-XXXX-XXXX-XXXX-XXXX
 set TABREGFILEPATH=C:\temp\TableauRegistration.reg
 
 :: End of Variables section
